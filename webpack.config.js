@@ -1,7 +1,7 @@
 module.exports = {
-  entry: './app.js',
+  entry: './public/javascripts/app.js',
   output: {
-    filename: 'build.js'
+    filename: './public/javascripts/build.js'
   },
   watch: true
 }
