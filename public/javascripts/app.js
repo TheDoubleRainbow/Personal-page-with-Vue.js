@@ -1,2 +1,2 @@
-require("./index/component")
+require("./index/info")
 require("./index/index")

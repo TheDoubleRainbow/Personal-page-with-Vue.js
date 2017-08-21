@@ -67,23 +67,49 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(1)
+__webpack_require__(6)
 __webpack_require__(2)
 
 /***/ }),
-/* 1 */
-/***/ (function(module, exports) {
-
-Vue.component('component', {
-	template: '<div>A custom component!</div>'
-})
-
-/***/ }),
+/* 1 */,
 /* 2 */
 /***/ (function(module, exports) {
 
 new Vue({
-  el: '#root'
+  el: '#root',
+  data: {
+  	info: {
+  		name: 'Andrew Khokhlov',
+  		pic: '/images/pic.jpg',
+  		links: {
+  			git: 'https://github.com/TheDoubleRainbow',
+  			facebook: "https://www.facebook.com/profile.php?id=100001883050092&ref=bookmarks",
+  			twitter: 'https://twitter.com/aaaasdd1?lang=ru',
+  			linkin: 'https://www.linkedin.com/in/andrew-khokhlov-717924127/',
+  			mail: '16mb.com@gmail.com'
+  		}
+  	}
+  }
+})
+
+/***/ }),
+/* 3 */,
+/* 4 */,
+/* 5 */,
+/* 6 */
+/***/ (function(module, exports) {
+
+Vue.component('info', {
+	template: `
+		<div>
+			<div id="top-info">
+				<img id="top-pic" :src="info.pic"/><br />
+				<span v-show="info.name" id="top-greeting">Hello, my name is <span id="top-name">{{info.name}}</span></span><br />
+				<span id="top-iam">i'm web developer</span>
+			</div>
+		</div>
+	`,
+	props: ["info"]
 })
 
 /***/ })
