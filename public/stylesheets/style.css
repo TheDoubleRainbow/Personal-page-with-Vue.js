@@ -41,8 +41,7 @@ body {
 .skill div {
   display: inline-block;
   text-align: center;
-  font-size: 18px;
-  margin-top: 5px; }
+  font-size: 18px; }
 
 #skills {
   margin-top: 40px;
@@ -52,7 +51,8 @@ body {
 
 #skills-label {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: 10px;
   font-size: 25px;
   color: black; }
 
@@ -62,7 +62,7 @@ body {
   width: 20px;
   height: 20px;
   position: relative;
-  top: -12px; }
+  margin: 0px 5px 0px 2px; }
 
 .marked {
   background: black; }

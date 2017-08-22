@@ -9,7 +9,7 @@ Vue.component('info', {
 			<div id="top-social">
 				<div id="mail">
 					{{info.links.mail}}
-				</div
+				</div>
 				<a v-show="info.links.git" :href="info.links.git"><img id="git" class="icon" src="/images/icons/github.png" /></a>
 				<a v-show="info.links.linkin" :href="info.links.linkin"><img id="linkedin" class="icon margin-icon" src="/images/icons/linkedin.png" /></a>
 				<a v-show="info.links.facebook" :href="info.links.facebook"><img id="facebook" class="icon margin-icon" src="/images/icons/facebook.jpg" /></a>
