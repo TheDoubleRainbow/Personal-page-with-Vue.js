@@ -3,7 +3,7 @@ new Vue({
   data: {
   	info: {
   		name: 'Andrew Khokhlov',
-  		pic: '/images/pic.jpg',
+  		pic: '/images/pic2.jpg',
   		links: {
   			git: 'https://github.com/TheDoubleRainbow',
   			facebook: "https://www.facebook.com/profile.php?id=100001883050092&ref=bookmarks",

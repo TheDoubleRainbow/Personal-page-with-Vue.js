@@ -1,8 +1,9 @@
 Vue.component('skills', {
 	template: `
 		<div id="skills">
+			<div id="skills-label">Skills:</div>
 			<div class="skill" v-for="skill in skills.list">
-				<div>{{skill.name}}</div><div>{{getRating(skill.level)}}</div>
+				<div class="col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2 col-sm-5 col-sm-offset-1 col-xs-6">{{skill.name}}</div><div class="col-md-4 col-lg-4 col-sm-5 col-xs-6" v-html="getRating(skill.level)"></div>
 			</div>
 		</div>
 	`,
@@ -19,6 +20,7 @@ Vue.component('skills', {
 				}
 			}
 			code += '</div>'
+			return code
 		}
 	}
 })
