@@ -11,6 +11,12 @@ new Vue({
   			linkin: 'https://www.linkedin.com/in/andrew-khokhlov-717924127/',
   			mail: '16mb.com@gmail.com'
   		}
+  	},
+  	skills: {
+  		list: [{name: 'JavaScript', level: 5}, {name: 'Vue.js', level: 4}, {name: 'React', level: 3}]
   	}
+  },
+  methods:{
+  	
   }
 })
