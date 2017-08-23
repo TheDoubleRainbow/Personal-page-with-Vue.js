@@ -2,14 +2,15 @@ doctype html
 html
 	head
 		title Andrew Khokhlov
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400")
 		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
 		link(rel="stylesheet", href="/stylesheets/style.css")
 		script(src="https://unpkg.com/vue")
 		script(src="https://code.jquery.com/jquery-3.2.1.slim.js")
 	body
-		.row
-			#root.col-md-8.col-md-offset-2.col-lg-8.col-lg-offset-2.col-sm-10.col-sm-offset-1.col-xs-12
-				info(:info="info")
-				skills(:skills="skills")
+		#root.col-md-8.col-md-offset-2.col-lg-8.col-lg-offset-2.col-sm-10.col-sm-offset-1.col-xs-12
+			info(:info="info")
+			skills(:skills="skills")
+			projects(:projects="projects")
 	script(src="/javascripts/build.js")

@@ -1,6 +1,7 @@
 body
-	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+	font: 16px "Josefin Sans" "Lucida Grande", Helvetica, Arial, sans-serif
 	background: white
+	font-weight: 400
 #root
 	padding: 30px 20px 30px 20px
 #top-greeting
@@ -28,6 +29,7 @@ body
 #mail
 	margin-top: 30px
 	margin-bottom: 10px
+	font-weight: 300
 .skill div
 	display: inline-block
 	text-align: center
@@ -37,6 +39,7 @@ body
 	padding-top: 20px
 	border-top: 1px solid black
 	color: #4D4E50
+	font-weight: 300
 #skills .skill:nth-last-of-type(1) hr
 	display: none
 #skills-label
@@ -55,3 +58,38 @@ body
 .marked
 	@extend .unmarked
 	background: black
+#projects
+	@extend #skills
+	margin-top: 50px
+#projects-label
+	@extend #skills-label
+.project-image
+	width: 200px
+	height: 120px
+.project
+	display: inline-block
+	width: 200px
+	height: 120px
+	margin-left: 40px
+	box-shadow: 0px -2px 5px #6C6C6C
+.project:nth-of-type(3n-2)
+	margin-left: 0
+#projects
+	text-align: center
+.project-git
+	display: flex
+	width: 40px
+	height: 40px
+	border-radius: 100%
+	box-shadow: 0px 0px 5px black
+	margin: 0 auto
+.project-link
+	@extend .project-git
+	background: white
+.project-links
+	display: flex
+	margin-top: -90px
+	text-align: center
+	justify-content: center
+.project-links  a:nth-of-type(2) img
+	margin-left: 20px

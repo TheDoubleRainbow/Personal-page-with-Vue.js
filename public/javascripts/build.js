@@ -75,8 +75,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index_info_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__index_info_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__index_skills_vue__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__index_skills_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__index_skills_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__index_index_vue__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__index_index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__index_index_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__index_projects_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__index_projects_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__index_projects_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__index_index_vue__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__index_index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__index_index_vue__);
+
+
 
 
 
@@ -143,11 +147,11 @@ new Vue({
   		}
   	},
   	skills: {
-  		list: [{name: 'JavaScript', level: 5}, {name: 'Vue.js', level: 4}, {name: 'React', level: 3}]
-  	}
-  },
-  methods:{
-  	
+  		list: [{name: 'JavaScript', level: 5}, {name: 'Vue.js', level: 4}, {name: 'React', level: 3}, {name: 'Angular', level: 3}, {name: 'SASS', level: 4}, {name: 'Bootstrap', level: 4}, {name: 'Webpack', level: 3}, {name: 'Express', level: 4}, {name: 'Node', level: 3}, {name: 'PHP', level: 2},{name: 'MySQL', level: 3},{name: 'MongoDB', level: 2}, {name: 'Python', level: 1}, {name: 'CLI', level: 4}, {name: 'GIT', level: 4}]
+  	},
+    projects:{
+      list: [{name: 'This page', github: 'https://github.com/TheDoubleRainbow/Personal-page-with-Vue.js', link: false, img: '/images/projects/page.png'}, {name: 'Cities game', github: 'https://github.com/TheDoubleRainbow/Cities', link: 'http://citiesapp.azurewebsites.net/', img: '/images/projects/cities.png'}, {name: 'Notes (Chrome app)', github: 'https://github.com/TheDoubleRainbow/notes', link: false, img: '/images/projects/notes.png'}]
+    }
   }
 })
 
@@ -181,6 +185,32 @@ Vue.component('skills', {
 			return code
 		}
 	}
+})
+
+/***/ }),
+/* 5 */,
+/* 6 */
+/***/ (function(module, exports) {
+
+Vue.component('projects', {
+	template: `
+		<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" id="projects">
+			<div id="projects-label">Projects:</div>
+			<div id="projects-list">
+				<div v-for="project in projects.list" class="project">
+					<div>
+						<img class="project-image" :src="project.img" />
+						<span class="project.name">{{project.name}}</span>
+					</div>
+					<div class="project-links">
+						<a v-show="project.github" :href="project.github"><img class="project-git" src="/images/icons/github.png"></a>
+						<a v-show="project.link" :href="project.link"><img class="project-git" src="/images/icons/web.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	`,
+	props:['projects']
 })
 
 /***/ })
