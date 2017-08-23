@@ -6,7 +6,7 @@ Vue.component('projects', {
 				<div v-for="project in projects.list" class="project">
 					<div>
 						<img class="project-image" :src="project.img" />
-						<span class="project.name">{{project.name}}</span>
+						<span class="project-name">{{project.name}}</span>
 					</div>
 					<div class="project-links">
 						<a v-show="project.github" :href="project.github"><div><img class="project-git" src="/images/icons/github-t.png"></div></a>

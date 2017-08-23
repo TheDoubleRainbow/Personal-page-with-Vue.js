@@ -3,7 +3,7 @@ body
 	background: white
 	font-weight: 400
 #root
-	padding: 30px 20px 30px 20px
+	padding: 30px 20px 70px 20px
 #top-greeting
 	font-size: 20px
 	display: block
@@ -66,6 +66,10 @@ body
 .project-image
 	width: 200px
 	height: 120px
+.project *
+	transition-duration: 0.3s
+.project:hover .project-links .project-git
+	background: white
 .project
 	display: inline-block
 	width: 200px
@@ -94,5 +98,8 @@ body
 .project-links a:nth-of-type(2) div
 	margin-left: 20px
 .project-links a div
-	background: white
+	background: #C8C8CB
 	border-radius: 100%
+.project-name
+	position: relative
+	top: 10px

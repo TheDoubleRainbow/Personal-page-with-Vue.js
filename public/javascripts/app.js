@@ -1,4 +1,4 @@
-import "./animate"
+import "./lib/animate"
 
 import "./index/info.vue"
 import "./index/skills.vue"

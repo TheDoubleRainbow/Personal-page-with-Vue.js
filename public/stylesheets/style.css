@@ -4,7 +4,7 @@ body {
   font-weight: 400; }
 
 #root {
-  padding: 30px 20px 30px 20px; }
+  padding: 30px 20px 70px 20px; }
 
 #top-greeting {
   font-size: 20px;
@@ -80,6 +80,12 @@ body {
   width: 200px;
   height: 120px; }
 
+.project * {
+  transition-duration: 0.3s; }
+
+.project:hover .project-links .project-git, .project:hover .project-links .project-link {
+  background: white; }
+
 .project {
   display: inline-block;
   width: 200px;
@@ -114,7 +120,11 @@ body {
   margin-left: 20px; }
 
 .project-links a div {
-  background: white;
+  background: #C8C8CB;
   border-radius: 100%; }
+
+.project-name {
+  position: relative;
+  top: 10px; }
 
 /*# sourceMappingURL=style.css.map */
