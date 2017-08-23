@@ -203,8 +203,8 @@ Vue.component('projects', {
 						<span class="project.name">{{project.name}}</span>
 					</div>
 					<div class="project-links">
-						<a v-show="project.github" :href="project.github"><img class="project-git" src="/images/icons/github.png"></a>
-						<a v-show="project.link" :href="project.link"><img class="project-git" src="/images/icons/web.png"></a>
+						<a v-show="project.github" :href="project.github"><div><img class="project-git" src="/images/icons/github-t.png"></div></a>
+						<a v-show="project.link" :href="project.link"><div><img class="project-git" src="/images/icons/web.png"></div></a>
 					</div>
 				</div>
 			</div>

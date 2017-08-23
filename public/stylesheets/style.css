@@ -110,7 +110,11 @@ body {
   text-align: center;
   justify-content: center; }
 
-.project-links a:nth-of-type(2) img {
+.project-links a:nth-of-type(2) div {
   margin-left: 20px; }
+
+.project-links a div {
+  background: white;
+  border-radius: 100%; }
 
 /*# sourceMappingURL=style.css.map */
